@@ -1,69 +1,45 @@
-# React + TypeScript + Vite
+# Preva Care Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This project is a React-based interactive feature showcase, designed to highlight five distinct features in a visually engaging and responsive layout. The UI is split into two main sections: a left panel displaying an iPhone mockup and feature details, and a right panel with clickable feature points.
 
-Currently, two official plugins are available:
+## Features & Requirements
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 1. Clickable Points (Right Side)
+- **Interactive Points:** Five clickable points are displayed on the right side.
+- **Active State:** Clicking a point sets it as active, indicated by a blue marker.
+- **Content Update:** The active point updates the iPhone image, heading, and body text on the left panel.
 
-## Expanding the ESLint configuration
+### 2. Left/Right Arrows (Left Side)
+- **Navigation:** Left and right arrows allow users to switch between features.
+- **Content Sync:** Arrow navigation updates the iPhone image, heading, and body text, just like clicking a point.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 3. Scroll Behavior
+- **Sticky Section:** The feature section becomes sticky when it enters the viewport, remaining visible as the user scrolls.
+- **Auto-Advance:** Scrolling within the sticky section automatically advances through features 1 to 5. After the last feature, normal page scrolling resumes.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 4. Mobile Responsiveness
+- **Mobile Layout:** The UI rearranges for mobile devices, ensuring tap-friendly controls and proper spacing for readability and usability.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## Tech Stack
+- **Framework:** React (preferred)
+- **Styling:** Any CSS approach (CSS Modules, Styled Components, Tailwind, etc.)
+- **Self-contained:** All styles and logic are kept clean and modular for easy maintenance.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Getting Started
+
+### Cloning the Project
+To clone and run this page locally:
+
+```bash
+git clone https://github.com/ARYAN-01-GARG/preva-care-assignment.git
+cd preva-care-assignment
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+This will start the development server. Open [http://localhost:5173](http://localhost:5173) in your browser to view the interactive feature showcase.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+For any questions or suggestions, feel free to open an issue or contact the maintainer.
