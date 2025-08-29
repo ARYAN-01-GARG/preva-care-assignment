@@ -5,7 +5,7 @@ function FeatureImage({
 }) {
   return   (
     <div className="transition-all duration-300 ease-in-out flex-1 flex items-center justify-center">
-      <img src={activeFeature.image} alt={activeFeature.title} />
+      <img src={activeFeature.image} alt={activeFeature.title} loading="lazy"/>
     </div>
   )
 }

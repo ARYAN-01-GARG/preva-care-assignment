@@ -15,9 +15,9 @@ export default function FeatureDetail({
       <h3 className="text-2xl font-medium py-4">{activeFeature.subtitle}</h3>
       <p className="font-sm text-neutral-500 font-normal">{activeFeature.description}</p>
       <div className="my-4">
-        <button onClick={handlePrev} className="px-4 py-2 hover:font-medium hover:text-neutral-500 cursor-pointer hover:bg-neutral-100"><BsArrowLeft size={20} /></button>
+        <button onClick={handlePrev} className="px-4 py-2 pb-4 hover:font-medium hover:text-neutral-500 cursor-pointer hover:bg-neutral-100"><BsArrowLeft size={20} /></button>
         <span className="border-2 border-blue-500 py-3"></span>
-        <button onClick={handleNext} className="px-4 py-2 hover:font-medium hover:text-neutral-500 cursor-pointer hover:bg-neutral-100"><BsArrowRight size={20} /></button>
+        <button onClick={handleNext} className="px-4 py-2 pb-4 hover:font-medium hover:text-neutral-500 cursor-pointer hover:bg-neutral-100"><BsArrowRight size={20} /></button>
       </div>
     </div>
   )

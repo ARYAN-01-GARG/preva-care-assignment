@@ -6,31 +6,31 @@ function App() {
       title: "Feature 1",
       subtitle: "Subtitle 1",
       description: "Description for Feature 1",
-      image: "react.svg"
+      image: "feature-1.jpg"
     },
     {
       title: "Feature 2",
       subtitle: "Subtitle 2",
       description: "Description for Feature 2",
-      image: "image2.jpg"
+      image: "feature-2.jpg"
     },
     {
       title: "Feature 3",
       subtitle: "Subtitle 3",
       description: "Description for Feature 3",
-      image: "image3.jpg"
+      image: "feature-3.jpg"
     },
     {
       title: "Feature 4",
       subtitle: "Subtitle 4",
       description: "Description for Feature 4",
-      image: "image4.jpg"
+      image: "feature-1.jpg"
     },
     {
       title: "Feature 5",
       subtitle: "Subtitle 5",
       description: "Description for Feature 5",
-      image: "image5.jpg"
+      image: "feature-3.jpg"
     }
   ];
   return (
