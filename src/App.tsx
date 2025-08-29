@@ -35,7 +35,7 @@ function App() {
   ];
   return (
     <main className="p-4 flex flex-col items-center justify-start min-h-screen">
-      <h1 className="text-3xl font-bold mb-4">Feature Showcase</h1>
+      <h1 className="mt-4 text-3xl font-bold mb-10">Feature Showcase</h1>
       <FeatureSection features={features} />
     </main>
   )

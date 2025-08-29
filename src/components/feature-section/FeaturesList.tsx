@@ -16,7 +16,7 @@ function FeaturesList({ features, activeFeatureIndex, onClick }: FeaturesListPro
               cursor-pointer
               p-4 pl-12 text-sm text-neutral-400
               font-bold
-              transition-colors duration-200 hover:bg-neutral-100 hover:border-l-4 hover:border-blue-500
+              transition-colors duration-200 hover:bg-neutral-100 hover:border-l-4 hover:border-blue-500 overflow-hidden
               ${activeFeatureIndex === index ? "border-l-4 border-blue-500 font-bold text-neutral-600" : "border-l-4 border-transparent"}
           `}>
           {feature.title} : {feature.subtitle}
